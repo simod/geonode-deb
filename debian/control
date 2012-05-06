@@ -5,6 +5,8 @@ Maintainer: Aaron Greengrass <aaron@thatserver.ca>
 Build-Depends: debhelper (>= 7.0.50~), unzip
 Standards-Version: 3.8.4
 Homepage: http://geonode.org/
+Vcs-Browser:  https://github.com/GeoNode/geonode
+Vcs-git: git://github.com/GeoNode/geonode.git
 
 Package: geonode
 Architecture: all

@@ -1,3 +1,8 @@
+geonode (1.2+alpha2) precise; urgency=medium
+  * Fixed 12.04 compatibility problems
+
+ -- Ariel Nunez <ingenieroariel@gmail.com>  Sun, 6 May 2012 13:44:33 -0500
+
 geonode (1.2+alpha) lucid; urgency=low
   * Switched to lxml for parsing
   * Added South for migrations

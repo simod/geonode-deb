@@ -1,8 +1,12 @@
 geonode (1.2+alpha4) precise; urgency=high
+  * Fixed 12.04 compatibility problems (again and again  - forever)
+
+ -- Ariel Nunez <ingenieroariel@gmail.com>  Sun, 6 May 2012 17:44:33 -0500
+
+geonode (1.2+alpha4) precise; urgency=high
   * Fixed 12.04 compatibility problems (again and again)
 
  -- Ariel Nunez <ingenieroariel@gmail.com>  Sun, 6 May 2012 15:44:33 -0500
-
 
 geonode (1.2+alpha3) precise; urgency=medium
   * Fixed 12.04 compatibility problems (again)

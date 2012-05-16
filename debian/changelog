@@ -1,20 +1,37 @@
+geonode (1.2+alpha5) precise; urgency=high
+  * Fixed styler problems
+  * Removed obsolete settings
+  * Updated locale files
+  * Switched GeoServer's default output strategy to FILE
+  * Renamed geonode_import to importlayers
+
+ -- Ariel Nunez <ingenieroariel@gmail.com>  Tue, 6 May 2012 17:44:33 -0500
+
+
 geonode (1.2+alpha4) precise; urgency=high
-  * Fixed 12.04 compatibility problems (again and again  - forever)
+  * Better legends
+  * Updated gxp, geoext, openlayers and other submodules
+  * First 10.04 and 12.04 compatible release. Hurray
 
  -- Ariel Nunez <ingenieroariel@gmail.com>  Sun, 6 May 2012 17:44:33 -0500
 
 geonode (1.2+alpha4) precise; urgency=high
-  * Fixed 12.04 compatibility problems (again and again)
+  * Added more background layers
+  * Fixes for 12.04 compatibility (postgis creation in pre-config.sh and post-config.sh)
 
  -- Ariel Nunez <ingenieroariel@gmail.com>  Sun, 6 May 2012 15:44:33 -0500
 
 geonode (1.2+alpha3) precise; urgency=medium
-  * Fixed 12.04 compatibility problems (again)
+  * Added comments
+  * Added ratings
+  * Added plusone (Facebook and Google Plus)
+  * Fixes for 12.04 compatibility (postgis creation in config.sh)
 
  -- Ariel Nunez <ingenieroariel@gmail.com>  Sun, 6 May 2012 14:44:33 -0500
 
 geonode (1.2+alpha2) precise; urgency=medium
-  * Fixed 12.04 compatibility problems
+  * Upgraded to Django-1.4
+  * Fixes for 12.04 compatibility (postgres9)
 
  -- Ariel Nunez <ingenieroariel@gmail.com>  Sun, 6 May 2012 13:44:33 -0500
 

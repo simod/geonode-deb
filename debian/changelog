@@ -1,3 +1,15 @@
+geonode (1.2+alpha7) precise; urgency=high
+  * Fixed toolbar not being displayed in map composer because CQL.js was missing
+
+ -- Ariel Nunez <ingenieroariel@gmail.com>  Wed, 16 May 2012 11:58:00 -0500
+
+
+geonode (1.2+alpha6) precise; urgency=high
+  * Minor fixes in settings.py and local_settings.py
+
+ -- Ariel Nunez <ingenieroariel@gmail.com>  Tue, 15 May 2012 17:44:34 -0500
+
+
 geonode (1.2+alpha5) precise; urgency=high
   * Fixed styler problems
   * Removed obsolete settings
@@ -5,7 +17,7 @@ geonode (1.2+alpha5) precise; urgency=high
   * Switched GeoServer's default output strategy to FILE
   * Renamed geonode_import to importlayers
 
- -- Ariel Nunez <ingenieroariel@gmail.com>  Tue, 6 May 2012 17:44:33 -0500
+ -- Ariel Nunez <ingenieroariel@gmail.com>  Tue, 15 May 2012 17:44:33 -0500
 
 
 geonode (1.2+alpha4) precise; urgency=high

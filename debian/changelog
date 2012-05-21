@@ -1,57 +1,19 @@
-geonode (1.2+alpha7) precise; urgency=high
-  * Fixed toolbar not being displayed in map composer because CQL.js was missing
-
- -- Ariel Nunez <ingenieroariel@gmail.com>  Wed, 16 May 2012 11:58:00 -0500
-
-
-geonode (1.2+alpha6) precise; urgency=high
-  * Minor fixes in settings.py and local_settings.py
-
- -- Ariel Nunez <ingenieroariel@gmail.com>  Tue, 15 May 2012 17:44:34 -0500
-
-
-geonode (1.2+alpha5) precise; urgency=high
-  * Fixed styler problems
-  * Removed obsolete settings
+geonode (1.2+alpha1) precise; urgency=high
   * Updated locale files
   * Switched GeoServer's default output strategy to FILE
   * Renamed geonode_import to importlayers
-
- -- Ariel Nunez <ingenieroariel@gmail.com>  Tue, 15 May 2012 17:44:33 -0500
-
-
-geonode (1.2+alpha4) precise; urgency=high
   * Better legends
   * Updated gxp, geoext, openlayers and other submodules
-  * First 10.04 and 12.04 compatible release. Hurray
-
- -- Ariel Nunez <ingenieroariel@gmail.com>  Sun, 6 May 2012 17:44:33 -0500
-
-geonode (1.2+alpha4) precise; urgency=high
   * Added more background layers
-  * Fixes for 12.04 compatibility (postgis creation in pre-config.sh and post-config.sh)
-
- -- Ariel Nunez <ingenieroariel@gmail.com>  Sun, 6 May 2012 15:44:33 -0500
-
-geonode (1.2+alpha3) precise; urgency=medium
   * Added comments
   * Added ratings
   * Added plusone (Facebook and Google Plus)
-  * Fixes for 12.04 compatibility (postgis creation in config.sh)
-
- -- Ariel Nunez <ingenieroariel@gmail.com>  Sun, 6 May 2012 14:44:33 -0500
-
-geonode (1.2+alpha2) precise; urgency=medium
   * Upgraded to Django-1.4
   * Fixes for 12.04 compatibility (postgres9)
-
- -- Ariel Nunez <ingenieroariel@gmail.com>  Sun, 6 May 2012 13:44:33 -0500
-
-geonode (1.2+alpha) lucid; urgency=low
   * Switched to lxml for parsing
   * Added South for migrations
 
- -- Ariel Nunez <ingenieroariel@gmail.com>  Fri, 20 Mar 2012 18:44:33 -0500
+ -- Ariel Nunez <ingenieroariel@gmail.com>  Sun, 20 May 2012 18:44:33 -0500
 
 geonode (1.1.1+final2) lucid; urgency=low
   * Fixed bug in first time installs.

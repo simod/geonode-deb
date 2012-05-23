@@ -1,3 +1,8 @@
+geonode (1.2+alpha2) precise; urgency=high
+  * Fixed a reverse url problem during upload
+
+ -- Ariel Nunez <ingenieroariel@gmail.com>  Wed, 23 May 2012 11:44:33 -0500
+
 geonode (1.2+alpha1) precise; urgency=high
   * Updated locale files
   * Switched GeoServer's default output strategy to FILE

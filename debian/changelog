@@ -1,3 +1,10 @@
+geonode (1.2+beta2) precise; urgency=high
+  * Fixed bug related to default style not being present
+  * Upgraded gsconfig to version 0.6
+  * Fixed missing links to local layers in map detail
+
+ -- Ariel Nunez <ingenieroariel@gmail.com>  Sat, 28 Jul 2012 11:44:33 -0500
+ 
 geonode (1.2+beta1) precise; urgency=high
   * Fixed a reverse url problem remove
   * Added legend to layer detail page

@@ -1,10 +1,17 @@
 geonode (1.2+beta2) precise; urgency=high
+  * Added geonode-updateip command
+  * Added MapQuest and OSM tiles by default to whitelist
+  * geonode-updateip also adds the local host to the printing whitelist
+  * Fixed gsconfig 0.6 bug with vector datastores
+  * Reorganized LOGGING in settings
   * Fixed bug related to default style not being present
   * Upgraded gsconfig to version 0.6
   * Fixed missing links to local layers in map detail
-
- -- Ariel Nunez <ingenieroariel@gmail.com>  Sat, 28 Jul 2012 11:44:33 -0500
+  * Map composer fixes
+  * More helpful importlayers
  
+ -- Ariel Nunez <ingenieroariel@gmail.com>  Wed, 1 Aug 2012 11:44:33 -0500
+
 geonode (1.2+beta1) precise; urgency=high
   * Fixed a reverse url problem remove
   * Added legend to layer detail page

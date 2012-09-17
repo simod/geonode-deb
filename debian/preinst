@@ -17,6 +17,10 @@ set -e
 # for details, see http://www.debian.org/doc/debian-policy/ or
 # the debian-policy package
 
+if [ -f /etc/geonode/local_settings.py ]
+then
+    cp etc/geonode/local_settings.py etc/geonode/local_settings.py.old
+fi
 
 case "$1" in
     upgrade)

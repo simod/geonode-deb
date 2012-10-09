@@ -17,7 +17,6 @@ set -e
 # for details, see http://www.debian.org/doc/debian-policy/ or
 # the debian-policy package
 
-
 case "$1" in
     configure)
          if [ "$2" = "1.1+RC2" ]
@@ -29,6 +28,7 @@ ALTER TABLE maps_maplayer
     ALTER COLUMN source_params TYPE text;
 EOF
          fi
+	 
          if [ "$2" = "" ]
          then
 		 /usr/share/geonode/install.sh -s once /usr/share/geonode/config-post.sh
@@ -41,8 +41,28 @@ EOF
          then
 		 /usr/share/geonode/install.sh -s setup_apache_once /usr/share/geonode/config-post.sh
          fi
-    ;;
+    
 
+# Load back the keywords for layers
+	cd /var/lib/geonode
+	source bin/activate
+	python <<EOF
+import os
+os.environ['DJANGO_SETTINGS_MODULE']='geonode.settings'
+from django.db import connection, transaction
+from geonode.maps.models import Layer, Map
+
+cursor = connection.cursor()
+cursor.execute('SELECT id,kw_bck FROM maps_layer;')
+rows = cursor.fetchall()
+for row in rows:
+	Layer.objects.get(id=row[0]).keywords.add(row[1])
+cursor.execute('ALTER TABLE maps_layer DROP kw_bck;')
+
+transaction.commit_unless_managed()
+cursor.close()
+EOF
+	;;
     abort-upgrade|abort-remove|abort-deconfigure)
     ;;
 

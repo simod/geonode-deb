@@ -32,9 +32,15 @@ case "$1" in
                   sed -i '/<param-name>GEOSERVER_DATA_DIR/,+1 s!param-value>.*</param-value!param-value>/var/lib/geoserver/geonode-data/</param-value!' /etc/geonode/geoserver/web.xml
              ;;
          esac
+	echo "Preinst called with upgrade"
+# Backup the keywords for layers
+	su - postgres -c 'psql geonode' <<EOF
+	ALTER TABLE maps_layer ADD kw_bck text;
+	update maps_layer SET kw_bck = keywords;
+EOF
     ;;
-    install)
-         true
+    install)    
+	true
     ;;
     *)
 	echo "preinst called with unknown argument \`$1'" >&2

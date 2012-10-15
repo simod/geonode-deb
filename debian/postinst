@@ -44,6 +44,8 @@ EOF
     
 
 # Load back the keywords for layers
+    if [ "$(sudo su postgres -c 'psql -d geonode -c "\d maps_layer" ' | awk /kw_bck/'{print $1}')" = 'title' ]
+    then
 	cd /var/lib/geonode
 	source bin/activate
 	python <<EOF
@@ -62,6 +64,7 @@ cursor.execute('ALTER TABLE maps_layer DROP kw_bck;')
 transaction.commit_unless_managed()
 cursor.close()
 EOF
+    fi
 	;;
     abort-upgrade|abort-remove|abort-deconfigure)
     ;;

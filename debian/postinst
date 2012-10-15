@@ -43,8 +43,8 @@ EOF
          fi
     
 
-# Load back the keywords for layers
-    if [ "$(sudo su postgres -c 'psql -d geonode -c "\d maps_layer" ' | awk /kw_bck/'{print $1}')" = 'title' ]
+# Load back the keywords for kw_bck
+    if [ "$(sudo su postgres -c 'psql -d geonode -c "\d maps_layer" ' | awk /kw_bck/'{print $1}')" = 'kw_bck' ]
     then
 	cd /var/lib/geonode
 	source bin/activate
